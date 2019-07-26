@@ -2,6 +2,7 @@ body {
     background: url(images/pokemon-blue-background.jpg);
     background-size: cover;
     color: #ffde00;
+    margin: 0;
     font-family: 'Ubuntu', sans-serif;
 }
 .main_header_section {
@@ -71,8 +72,6 @@ body {
     background: #F62D28;
     text-align: center;
     font-size: 1rem;
-
-    margin-left: -.4%;
 }
 .footer_social_icons a{
     color: #ffde00;
