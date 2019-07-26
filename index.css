@@ -87,6 +87,6 @@ body {
 @media(max-width: 800px) {
   #pokemonInfoRetriever article {
     width: 100%;
-    margin-bottom: 125px;
+    margin-bottom: 75px;
 }  
 }
