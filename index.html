@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon Info Retriever</title>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"></link>
+    <script src="https://kit.fontawesome.com/9ed3b93ba3.js"></script>
+</head>
+<body>
+    
+    <section class="main_header_section">
+    <!-- <h1>Pokemon Info Retriever</h1> -->
+    <h1><img src="images/Pokemon-Info-Retriever.png"></h1>
+    <h2><a href="https://fontmeme.com/pokemon-font/" target="_blank"><img src="https://fontmeme.com/permalink/190726/414ec1208a4fc6c6dc4f213f89ca2490.png" alt="pokemon-font" border="0"></a></h2>
+    <img class="pokeball_logo" src="images/pokeball.png">
+    </section>
+
+    <section id="pokemonInfoRetriever">
+        <input v-model="pokemonNameInput" placeholder="Enter Pokemon Name">
+        <br/>
+        <button v-on:click="getPokemonData(pokemonNameInput)">Get Pokemon Info</button>
+        <article class="allPokemonInfo">
+            <p><img v-bind:src="pokemonImage"></p>
+            <p>{{ pokemonTypeInfo }}</p>
+            <p>{{ pokemonIndex }}</p>
+            <p>{{ pokemonHeightInFeet }}</p>
+            <p>{{ pokemonWeightInPounds }}</p>
+            <p>{{ randomListOfPokemonMoves }}</p>
+            <p>{{ incorrectInput }}</p>
+        </article>
+
+        <footer class="the_footer">
+                <section class="footer_social_icons">
+                    <a href="https://github.com/jaysnel" target="_blank"><i id="social-gh" class="fab fa-github-square fa-3x social"></i></a>
+                    <a href="https://codepen.io/Jaylan_Snelson/" target="_blank"><i id="social-cp" class="fab fa-codepen fa-3x social"></i></a>
+                    <a href="https://www.linkedin.com/in/jaylansnelson" target="_blank"><i id="social-li" class="fab fa-linkedin fa-3x social"></i></a>
+                </section>
+                <section>
+                    &copy; Created And Designed By Jaylan Snelson
+                </section>
+            </footer>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="index.js"></script>
+</body>
+</html>
