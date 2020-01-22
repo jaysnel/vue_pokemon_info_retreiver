@@ -2,8 +2,8 @@
 
 Welcome!
 
-Here you can type in any pokemon name to see its base stats so enjoy!
+Here you can type in any pokemon name to see its base stats and other interesting info!
 
-This was created using Vue.js and the pokeapi
+This web app was created using Vue.js and the pokeapi and can be seen from the link below.
 
 https://jaysnel.github.io/vue_pokemon_info_retreiver/
