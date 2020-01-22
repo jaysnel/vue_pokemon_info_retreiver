@@ -1,4 +1,4 @@
-# vue_pokemon_info_retreiver
+# Pokemon Retreiver
 
 Welcome!
 
